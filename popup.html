@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      color: #1d1d1d;
+      background: #f5f5f5;
+      width: 260px;
+    }
+
+    .header {
+      background: #1d1d1d;
+      color: #fff;
+      padding: 14px 16px;
+    }
+
+    .header h1 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .header p {
+      font-size: 11px;
+      color: #aaa;
+      line-height: 1.4;
+    }
+
+    .content {
+      padding: 14px 16px;
+    }
+
+    .step {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .step-num {
+      background: #00bfa5;
+      color: #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-text {
+      color: #333;
+      line-height: 1.5;
+      padding-top: 1px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 10px 0;
+    }
+
+    .note {
+      font-size: 11px;
+      color: #888;
+      line-height: 1.5;
+    }
+
+    code {
+      background: #e8e8e8;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Overboard</h1>
+    <p>Download locked Blackboard content</p>
+  </div>
+
+  <div class="content">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">Open a content item in Blackboard with no download button.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">A <strong>Download</strong> button appears in the top-right corner.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">Click it — the file saves to your downloads folder.</div>
+    </div>
+
+    <hr class="divider" />
+    <p class="note">Works with PDFs (<code>pdfUrl</code>) and other files (<code>originalUrl</code>).</p>
+    <p class="note" style="margin-top:6px;">
+      <a href="https://github.com/reubxn/OverBoard" target="_blank" style="color:#00bfa5;text-decoration:none;">github.com/reubxn/OverBoard</a>
+    </p>
+  </div>
+</body>
+</html>
