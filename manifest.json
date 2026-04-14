@@ -18,6 +18,16 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Blackboard PDF Downloader"
+    "default_title": "Overboard",
+    "default_icon": {
+      "16": "assets/padlock.png",
+      "48": "assets/padlock.png",
+      "128": "assets/padlock.png"
+    }
+  },
+  "icons": {
+    "16": "assets/padlock.png",
+    "48": "assets/padlock.png",
+    "128": "assets/padlock.png"
   }
 }

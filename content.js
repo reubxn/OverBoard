@@ -32,7 +32,7 @@
 
     const btn = document.createElement('button');
     btn.id = '__bb_dl_btn';
-    btn.textContent = 'Download';
+    btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px"><path d="M12 3v13M5 14l7 7 7-7"/><path d="M3 21h18"/></svg>Download`;
     Object.assign(btn.style, {
       position: 'fixed',
       top: '12px',
@@ -50,15 +50,17 @@
       textTransform: 'uppercase',
       cursor: 'pointer',
       boxShadow: '0 2px 6px rgba(0,0,0,0.25)',
+      display: 'flex',
+      alignItems: 'center',
     });
 
     btn.onclick = () => {
       chrome.runtime.sendMessage({ action: 'download', url: downloadUrl, filename });
-      btn.textContent = 'Downloading...';
+      btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px"><path d="M12 3v13M5 14l7 7 7-7"/><path d="M3 21h18"/></svg>Downloading...`;
       btn.style.background = '#1d1d1d';
       btn.disabled = true;
       setTimeout(() => {
-        btn.textContent = 'Download';
+        btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px"><path d="M12 3v13M5 14l7 7 7-7"/><path d="M3 21h18"/></svg>Download`;
         btn.style.background = '#00bfa5';
         btn.disabled = false;
       }, 3000);

@@ -3,7 +3,7 @@
 <h1>OVERBOARD</h1>
 <h3><em>Download locked Blackboard content with one click</em></h3>
 
-<img src="icon.png" alt="Overboard icon" width="120" />
+<img src="assets/padlock.png" alt="Overboard icon" width="120" />
 
 <p>
   <a href="https://github.com/reubxn/OverBoard"><img src="https://img.shields.io/badge/Platform-Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome"></a>
@@ -15,9 +15,28 @@
 
 ---
 
-Overboard is a Chrome extension that automatically detects non-downloadable PDFs and files on Blackboard LMS and injects a **Download** button — no inspect element, no URL decoder, no faff.
+Overboard is a Chrome extension that automatically detects non-downloadable PDFs and files on Blackboard LMS and injects a **Download** button, no inspect element, no URL decoder, no hassle.
 
 It works by reading the exposed `pdfUrl` and `originalUrl` parameters from the Blackboard document viewer iframe and triggering a direct download.
+
+---
+
+## Screenshots
+
+<div align="center">
+<img src="assets/downloadable-vs-locked.webp" alt="Locked vs downloadable content" width="600" />
+<p><em>Locked content (no download option) vs normal downloadable content</em></p>
+
+<br />
+
+<img src="assets/button-in-action.png" alt="Download button injected on page" width="600" />
+<p><em>Overboard injects a Download button top-right when locked content is detected</em></p>
+
+<br />
+
+<img src="assets/popup.png" alt="Extension popup" width="260" />
+<p><em>Extension popup</em></p>
+</div>
 
 ---
 
